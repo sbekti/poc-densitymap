@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  .container
+    .row
+      h1 User Registration
+      p.lead Please enter your contact details below.
+
+      form(role='form', action='/adjust', method='post')
+        .form-group
+          label(for='name') Full Name:
+          input#name.form-control(name='name', type='text', placeholder='John Doe')
+        .form-group
+          label(for='email') Email:
+          input#email.form-control(name='email', type='email', placeholder='someone@example.com')
+        .form-group
+          label(for='phone') Phone:
+          input#phone.form-control(name='phone', type='text', placeholder='+62')
+        .form-group
+          label(for='address') Address:
+          input#address.form-control(name='address', type='text', placeholder='Jl. Jenderal Gatot Subroto No.42 Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12710')
+        .form-group
+          label(for='tier') Tier:
+          select#tier.form-control(name='tier')
+            option Upper tier
+            option Middle tier
+            option Lower tier
+        .form-group
+          button.btn.btn-success(type='submit') Submit
+
+      script(src='/scripts/register.js')

@@ -1,0 +1,32 @@
+{
+  "name": "poc-densitymap",
+  "version": "0.1.0",
+  "description": "A proof-of-concept for mapping potential customer interest in a certain area.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbekti/poc-densitymap.git"
+  },
+  "author": "Samudra Harapan Bekti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sbekti/poc-densitymap/issues"
+  },
+  "homepage": "https://github.com/sbekti/poc-densitymap#readme",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "csv-parse": "^0.1.3",
+    "express": "^4.13.1",
+    "http": "0.0.0",
+    "http-auth": "^2.2.8",
+    "jade": "^1.11.0",
+    "json2csv": "^2.8.1",
+    "path": "^0.11.14",
+    "request": "^2.60.0",
+    "socket.io": "^1.3.6"
+  }
+}

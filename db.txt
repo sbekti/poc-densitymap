@@ -1,0 +1,2 @@
+"dev1proto","samudra.bekti@gmail.com","+62731","Jalan Cigadung Selatan I","Upper tier","-6.885953080390549","107.62979507446289"
+"Samudra Harapan Bekti","samudra.bekti@gmail.com","+629912821","Jalan Ir H juanda, bandung","Middle tier","-6.890980536470734","107.61307954788208"

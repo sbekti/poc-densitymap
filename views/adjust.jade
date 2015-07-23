@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  script.
+    window.data = JSON.parse('!{json_data}');
+
+  .container
+    .row
+      h1 Adjust Position
+      p.lead You may need to move the marker to fine-tune your exact location on the map.
+      #map-adjust
+      form(role='form', action='/register', method='post')
+        input.form-control(name='name', type='hidden', value='#{data.name}')
+        input.form-control(name='email', type='hidden', value='#{data.email}')
+        input.form-control(name='phone', type='hidden', value='#{data.phone}')
+        input.form-control(name='address', type='hidden', value='#{data.address}')
+        input.form-control(name='tier', type='hidden', value='#{data.tier}')
+        input.form-control(id='lat' name='lat', type='hidden', value='#{data.lat}')
+        input.form-control(id='lng' name='lng', type='hidden', value='#{data.lng}')
+        .form-group
+          button.btn.btn-success(type='submit') Submit
+      script(src='/scripts/adjust.js')

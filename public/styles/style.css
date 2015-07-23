@@ -1,0 +1,15 @@
+#map-adjust {
+  height: 350px;
+  width: 640px;
+  margin-bottom: 20px;
+}
+#map-admin {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.marker-title {
+  font-weight: bold;
+  font-size: 18px;
+}

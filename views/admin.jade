@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  script.
+    window.data = JSON.parse('!{json_data}');
+  #map-admin
+  script(src='/scripts/admin.js')
